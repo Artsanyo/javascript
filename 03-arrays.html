@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const favoriteCookies = ["normal cookie",
+            "Milk",
+            "Milk and Honey"];
+
+        favoriteCookies.push("Kenyan")
+
+        const newArray = favoriteCookies.slice(-1, 0);
+        console.log(newArray);
+
+        console.log(favoriteCookies);
+
+
+
+        favoriteCookies.push("chocolate chip", "kenyan cookie")
+        console.log(favoriteCookies);
+        favoriteCookies.pop()
+        console.log(favoriteCookies);
+        console.log(favoriteCookies[favoriteCookies.length - 1]);
+
+        let varAsIndex = 1;
+        console.log(favoriteCookies[varAsIndex]);
+        console.log(favoriteCookies.length)
+        let newVar = favoriteCookies.length - 1;
+        console.log(newVar)
+
+        let poppedCookie = favoriteCookies.pop();
+        console.log(poppedCookie);
+        console.log(poppedCookie[0]);
+
+        console.log(favoriteCookies);
+        console.log("The popped item in the array was " + poppedCookie);
+
+        console.log(favoriteCookies[0]); //accessing favoriteCookie index of zero
+        console.log(poppedCookie[0]); //accessing poppedCookie index of zero
+
+    </script>
+
+</body>
+
+</html>
